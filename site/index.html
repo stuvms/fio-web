@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIO — Mira en qué se te va la plata</title>
+  <meta name="description" content="FIO registra solo tus gastos a partir de las notificaciones del banco y los clasifica mes a mes. Sin Internet: tus datos no salen del teléfono.">
+  <meta name="theme-color" content="#006A6A">
+  <meta property="og:title" content="FIO — Mira en qué se te va la plata">
+  <meta property="og:description" content="Registra y clasifica tus gastos automáticamente. Sin Internet: tus datos no salen del teléfono.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#" aria-label="FIO, inicio">
+        <img src="favicon.svg" alt="" width="32" height="32">
+        <span>FIO</span>
+      </a>
+      <nav aria-label="Secciones">
+        <a href="#funciones">Funciones</a>
+        <a href="#privacidad">Privacidad</a>
+        <a href="#descarga">Descarga</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">App de gastos para Android</p>
+          <h1>Mira en qué se te va la plata, mes a mes.</h1>
+          <p class="lead">
+            FIO lee las notificaciones de tu banco y los correos de compra, registra cada gasto
+            y lo clasifica solo. Tú solo revisas.
+          </p>
+          <div class="actions">
+            <a class="btn btn-filled" href="#descarga">Descargar</a>
+            <a class="btn btn-tonal" href="#funciones">Ver cómo funciona</a>
+          </div>
+          <ul class="facts" aria-label="Datos clave">
+            <li><strong>Sin Internet</strong> tus datos no salen del teléfono</li>
+            <li><strong>Cifrada</strong> base de datos protegida</li>
+            <li><strong>Android 8+</strong> gratis</li>
+          </ul>
+        </div>
+
+        <!-- Teléfono ilustrativo con datos de ejemplo -->
+        <figure class="phone" aria-label="Ejemplo de la pantalla de estadísticas de FIO con datos ficticios">
+          <div class="screen">
+            <p class="screen-title">Estadísticas</p>
+            <p class="month">‹ &nbsp;Noviembre 2026&nbsp; ›</p>
+            <div class="total-card">
+              <span class="label">Gastado en noviembre</span>
+              <span class="amount">$412.380</span>
+              <span class="delta">↓ 8% vs octubre</span>
+            </div>
+            <p class="screen-section">Por categoría</p>
+            <ul class="cats">
+              <li style="--c: var(--cat-super); --w: 100%"><span>Supermercado</span><b>$148.200</b><i></i></li>
+              <li style="--c: var(--cat-food); --w: 68%"><span>Comida</span><b>$101.050</b><i></i></li>
+              <li style="--c: var(--cat-transport); --w: 41%"><span>Transporte</span><b>$60.900</b><i></i></li>
+              <li style="--c: var(--cat-subs); --w: 22%"><span>Suscripciones</span><b>$32.480</b><i></i></li>
+            </ul>
+            <p class="screen-section">Top comercios</p>
+            <ol class="top">
+              <li><span>Supermercado Centro</span><b>4 compras</b></li>
+              <li><span>Café de la esquina</span><b>3 compras</b></li>
+            </ol>
+            <div class="navbar" aria-hidden="true">
+              <span>Movimientos</span><span class="on">Estadísticas</span><span>Agenda</span><span>Ajustes</span>
+            </div>
+          </div>
+          <figcaption>Datos de ejemplo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="funciones" class="section">
+      <div class="wrap">
+        <h2>Todo lo que necesitas para entender tus gastos</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🔔</div>
+            <h3>Captura automática</h3>
+            <p>Cada compra con tarjeta o transferencia que te avisa el banco, por notificación o por correo, queda registrada sin que hagas nada.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🏷️</div>
+            <h3>Se clasifica sola</h3>
+            <p>Categorizas un comercio una vez y FIO aprende. También puedes crear reglas: <em>“contiene tottus → Supermercado”</em>.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">📊</div>
+            <h3>Estadísticas claras</h3>
+            <p>Total del mes y comparación con el anterior, gasto por categoría, tendencia de seis meses y el top 10 de comercios.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🧾</div>
+            <h3>Pendientes agrupados</h3>
+            <p>Lo que aún no tiene categoría se agrupa por comercio, así clasificas varios gastos de un toque.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">✍️</div>
+            <h3>Registro manual rápido</h3>
+            <p>¿Pagaste en efectivo? Escribe el monto y el comercio: FIO te sugiere los que ya conoce con su categoría habitual.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">📤</div>
+            <h3>Tus datos, exportables</h3>
+            <p>Exporta tus movimientos a CSV cuando quieras para abrirlos en una planilla.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="wrap">
+        <h2>Cómo funciona</h2>
+        <ol class="steps">
+          <li>
+            <h3>Dale acceso a las notificaciones</h3>
+            <p>FIO solo procesa los avisos de bancos y correos de compra. El resto lo ignora.</p>
+          </li>
+          <li>
+            <h3>Paga como siempre</h3>
+            <p>Cada aviso de compra se convierte en un gasto con su monto, comercio y fecha. Los duplicados se descartan.</p>
+          </li>
+          <li>
+            <h3>Revisa tu mes</h3>
+            <p>Clasifica los pendientes y mira en Estadísticas en qué se te fue la plata.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="privacidad" class="section privacy">
+      <div class="wrap privacy-grid">
+        <div>
+          <h2>Privada por diseño</h2>
+          <p class="lead">Tus gastos dicen mucho de ti. Por eso FIO no los envía a ninguna parte.</p>
+        </div>
+        <ul class="checks">
+          <li><strong>Sin permiso de Internet.</strong> La app no puede conectarse a la red: no hay servidores, cuentas ni publicidad.</li>
+          <li><strong>Base de datos cifrada.</strong> Tus movimientos se guardan cifrados en el teléfono.</li>
+          <li><strong>Bloqueo con huella.</strong> Opcional, para que nadie más abra la app.</li>
+          <li><strong>No guarda contraseñas.</strong> Nunca te pide la clave del banco: solo lee los avisos que ya recibes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="descarga" class="section download">
+      <div class="wrap download-card">
+        <img src="favicon.svg" alt="" width="72" height="72">
+        <div>
+          <h2>Descarga</h2>
+          <p>FIO está en desarrollo. Pronto podrás descargar el instalador (APK) para Android 8.0 o superior desde esta página.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>FIO · versión 0.10.0 · Hecho con Kotlin y Material 3</p>
+    </div>
+  </footer>
+</body>
+</html>

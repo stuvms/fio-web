@@ -73,7 +73,7 @@
               <li><span>Café de la esquina</span><b>3 compras</b></li>
             </ol>
             <div class="navbar" aria-hidden="true">
-              <span>Movimientos</span><span class="on">Estadísticas</span><span>Agenda</span><span>Ajustes</span>
+              <span>Movimientos</span><span class="on">Estadísticas</span><span>Pagos</span><span>Ajustes</span>
             </div>
           </div>
           <figcaption>Datos de ejemplo</figcaption>
@@ -111,9 +111,24 @@
             <p>¿Pagaste en efectivo? Escribe el monto y el comercio: FIO te sugiere los que ya conoce con su categoría habitual.</p>
           </article>
           <article class="card">
-            <div class="icon" aria-hidden="true">📤</div>
-            <h3>Tus datos, exportables</h3>
-            <p>Exporta tus movimientos a CSV cuando quieras para abrirlos en una planilla.</p>
+            <div class="icon" aria-hidden="true">📅</div>
+            <h3>Pagos y suscripciones</h3>
+            <p>Agrega tus cuentas fijas y FIO te avisa antes del vencimiento. Cuando llega el cobro, la marca pagada sola. También te sugiere los cobros que se repiten.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">👥</div>
+            <h3>Gastos compartidos</h3>
+            <p>Divide un gasto en partes iguales, por monto o por porcentaje. La otra persona recibe un enlace por WhatsApp y su FIO lo registra. Sin cuentas ni servidores.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🔁</div>
+            <h3>Sin duplicados</h3>
+            <p>Si la tienda, el medio de pago y el banco avisan la misma compra, FIO la cuenta una sola vez. Y si la anotas a mano, te pregunta si ya estaba.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🎨</div>
+            <h3>A tu gusto</h3>
+            <p>Modo claro u oscuro y temas conocidos: los colores de tu fondo, Nord, Dracula, Solarized, Catppuccin y Gruvbox.</p>
           </article>
         </div>
       </div>
@@ -148,7 +163,8 @@
         <ul class="checks">
           <li><strong>Sin permiso de Internet.</strong> La app no puede conectarse a la red: no hay servidores, cuentas ni publicidad.</li>
           <li><strong>Base de datos cifrada.</strong> Tus movimientos se guardan cifrados en el teléfono.</li>
-          <li><strong>Bloqueo con huella.</strong> Opcional, para que nadie más abra la app.</li>
+          <li><strong>Bloqueo con huella.</strong> Activo desde el inicio, para que nadie más abra la app. La pantalla tampoco aparece en capturas ni en las apps recientes.</li>
+          <li><strong>Respaldo con tu contraseña.</strong> Para cambiar de teléfono, FIO crea un archivo cifrado que solo se abre con tu contraseña. También puedes exportar a CSV.</li>
           <li><strong>No guarda contraseñas.</strong> Nunca te pide la clave del banco: solo lee los avisos que ya recibes.</li>
         </ul>
       </div>
@@ -158,8 +174,22 @@
       <div class="wrap download-card">
         <img src="favicon.svg" alt="" width="72" height="72">
         <div>
-          <h2>Descarga</h2>
-          <p>FIO está en desarrollo. Pronto podrás descargar el instalador (APK) para Android 8.0 o superior desde esta página.</p>
+          <h2>Descarga FIO 1.0</h2>
+          <p>Gratis, para Android 8.0 o superior · 16 MB</p>
+          <div class="actions download-actions">
+            <a class="btn btn-filled" href="https://github.com/stuvms/fio-web/releases/download/v1.0.0/fio-1.0.0.apk" download>Descargar APK</a>
+            <a class="btn btn-tonal" href="https://github.com/stuvms/fio-web/releases/tag/v1.0.0">Notas de la versión</a>
+          </div>
+          <ol class="install">
+            <li>Abre el archivo descargado en tu teléfono.</li>
+            <li>Si Android lo pide, permite instalar apps desde tu navegador o gestor de archivos.</li>
+            <li>Abre FIO y dale acceso a las notificaciones para que empiece a registrar tus gastos.</li>
+          </ol>
+          <details class="verify">
+            <summary>Verificar el archivo</summary>
+            <p>SHA-256 del APK:<br><code>36ca08fd31ebc774e73e2aded7b283dff28feb192018ad8bdc0503d27a6299bf</code></p>
+            <p>Certificado de firma (SHA-256):<br><code>73:63:38:FA:D4:E8:BC:8F:88:49:0A:5C:F1:DF:B4:34:31:7E:0E:1A:B8:29:46:43:6E:CC:0C:54:9B:94:61:7E</code></p>
+          </details>
         </div>
       </div>
     </section>
@@ -167,7 +197,7 @@
 
   <footer class="footer">
     <div class="wrap">
-      <p>FIO · versión 0.10.0 · Hecho con Kotlin y Material 3</p>
+      <p>FIO · versión 1.0.0 · Hecho con Kotlin y Material 3</p>
     </div>
   </footer>
 </body>

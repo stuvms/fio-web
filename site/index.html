@@ -119,51 +119,83 @@
     <section id="funciones" class="section">
       <div class="wrap">
         <h2>Todo lo que necesitas para entender tus gastos</h2>
-        <div class="grid">
-          <article class="card">
-            <div class="icon" aria-hidden="true">🔔</div>
-            <h3>Captura automática</h3>
-            <p>Cada compra con tarjeta o transferencia que te avisa el banco, por notificación o por correo, queda registrada sin que hagas nada.</p>
+        <div class="bento">
+          <article class="tile t-capture">
+            <div class="tile-text">
+              <p class="kicker">Automático</p>
+              <h3>Cada compra queda registrada sola</h3>
+              <p>FIO lee las notificaciones del banco y los correos de compra, y anota monto, comercio y fecha. ¿Pagaste en efectivo? Lo agregas en segundos, con sugerencias de los comercios que ya conoce.</p>
+            </div>
+            <div class="notif" aria-hidden="true"><span class="notif-icon">🔔</span><span><b>Tu banco</b> · Compra por $5.600 en PANADERÍA LA ESPIGA</span></div>
+            <picture class="shot">
+              <source srcset="img/dark/bento-lista.webp" media="(prefers-color-scheme: dark)">
+              <img src="img/light/bento-lista.webp" alt="Lista de movimientos de FIO con dos gastos categorizados" width="720" height="453" loading="lazy">
+            </picture>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">🏷️</div>
+
+          <article class="tile t-rules">
+            <p class="kicker">Aprende</p>
             <h3>Se clasifica sola</h3>
-            <p>Categorizas un comercio una vez y FIO aprende. También puedes crear reglas: <em>“contiene tottus → Supermercado”</em>.</p>
+            <p>Categorizas un comercio una vez y FIO lo recuerda. Lo pendiente se agrupa para clasificar varios gastos de un toque.</p>
+            <div class="group-demo" aria-hidden="true">
+              <div class="group-head"><span class="q">?</span><div><b>Panadería La Espiga</b><small>2 gastos · $12.400</small></div></div>
+              <small class="group-hint">Categorizar los 2 de una vez</small>
+            <div class="chips">
+              <span style="--c:#f97316">Comida</span><span style="--c:#10b981">Supermercado</span><span style="--c:#3b82f6">Transporte</span><span style="--c:#8b5cf6">Hogar</span><span style="--c:#06b6d4">Suscripciones</span>
+            </div>
+            </div>
+            <p class="rule" aria-hidden="true"><span>contiene “café”</span> → Comida</p>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">📊</div>
-            <h3>Estadísticas claras</h3>
-            <p>Total del mes y comparación con el anterior, gasto por categoría, tendencia de seis meses y el top 10 de comercios.</p>
+
+          <article class="tile t-bills">
+            <p class="kicker">Planifica</p>
+            <h3>Pagos sin sorpresas</h3>
+            <p>Tus cuentas fijas con aviso antes del vencimiento. Se marcan pagadas solas al llegar el cobro.</p>
+            <div class="heat" aria-hidden="true"><i class="h0"></i><i class="h2"></i><i class="h1"></i><i class="h3 due"></i><i class="h0"></i><i class="h1"></i><i class="h4"></i><i class="h2"></i><i class="h0"></i><i class="h3"></i><i class="h1 due"></i><i class="h2"></i><i class="h0"></i><i class="h1"></i></div>
+            <p class="pill" aria-hidden="true">Mañana vence Internet · ~$25.000</p>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">🧾</div>
-            <h3>Pendientes agrupados</h3>
-            <p>Lo que aún no tiene categoría se agrupa por comercio, así clasificas varios gastos de un toque.</p>
-          </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">✍️</div>
-            <h3>Registro manual rápido</h3>
-            <p>¿Pagaste en efectivo? Escribe el monto y el comercio: FIO te sugiere los que ya conoce con su categoría habitual.</p>
-          </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">📅</div>
-            <h3>Pagos y suscripciones</h3>
-            <p>Agrega tus cuentas fijas y FIO te avisa antes del vencimiento. Cuando llega el cobro, la marca pagada sola. También te sugiere los cobros que se repiten.</p>
-          </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">👥</div>
+
+          <article class="tile t-shared">
+            <p class="kicker">Divide</p>
             <h3>Gastos compartidos</h3>
-            <p>Divide un gasto en partes iguales, por monto o por porcentaje. La otra persona recibe un enlace por WhatsApp y su FIO lo registra. Sin cuentas ni servidores.</p>
+            <p>Partes iguales, por monto o por porcentaje. La otra persona recibe un enlace y su FIO lo registra.</p>
+            <div class="balance" aria-hidden="true">
+              <div><span>Te deben</span><b class="pos">$10.250</b></div>
+              <div><span>Debes</span><b class="neg">$8.500</b></div>
+              <div class="avatars"><i>C</i><i>D</i></div>
+            </div>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">🔁</div>
+
+          <article class="tile t-dupes">
+            <p class="kicker">Ordenado</p>
             <h3>Sin duplicados</h3>
-            <p>Si la tienda, el medio de pago y el banco avisan la misma compra, FIO la cuenta una sola vez. Y si la anotas a mano, te pregunta si ya estaba.</p>
+            <p>Si la tienda, el medio de pago y el banco avisan la misma compra, cuenta una sola vez.</p>
+            <div class="merge" aria-hidden="true">
+              <span>Tienda</span><span>Medio de pago</span><span>Banco</span>
+              <b>1 gasto</b>
+            </div>
           </article>
-          <article class="card">
-            <div class="icon" aria-hidden="true">🎨</div>
-            <h3>A tu gusto</h3>
-            <p>Modo claro u oscuro y temas conocidos: los colores de tu fondo, Nord, Dracula, Solarized, Catppuccin y Gruvbox.</p>
+
+          <article class="tile t-stats">
+            <div class="tile-text">
+              <p class="kicker">Entiende</p>
+              <h3>En qué se te va la plata</h3>
+              <p>Total del mes comparado con el anterior, gasto por categoría, tendencia de seis meses y los comercios donde más gastas.</p>
+            </div>
+            <div class="bars" aria-hidden="true">
+              <div class="bars-head"><b>$459.080</b><span>noviembre</span></div>
+              <div class="bars-plot"><i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:45%"></i><i style="--h:64%"></i><i style="--h:58%"></i><i style="--h:82%" class="now"></i></div>
+              <div class="bars-x"><span>jun</span><span>jul</span><span>ago</span><span>sep</span><span>oct</span><span>nov</span></div>
+            </div>
+          </article>
+
+          <article class="tile t-themes">
+            <p class="kicker">A tu gusto</p>
+            <h3>Claro, oscuro y temas</h3>
+            <p>Los colores de tu fondo de pantalla o temas conocidos.</p>
+            <div class="swatches" aria-hidden="true">
+              <i style="--a:#006a6a;--b:#9cf1f0" title="FIO"></i><i style="--a:#2e3440;--b:#88c0d0" title="Nord"></i><i style="--a:#282a36;--b:#bd93f9" title="Dracula"></i><i style="--a:#002b36;--b:#268bd2" title="Solarized"></i><i style="--a:#1e1e2e;--b:#cba6f7" title="Catppuccin"></i><i style="--a:#282828;--b:#fabd2f" title="Gruvbox"></i>
+            </div>
           </article>
         </div>
       </div>

@@ -51,32 +51,67 @@
         </div>
 
         <!-- Teléfono ilustrativo con datos de ejemplo -->
-        <figure class="phone" aria-label="Ejemplo de la pantalla de estadísticas de FIO con datos ficticios">
-          <div class="screen">
-            <p class="screen-title">Estadísticas</p>
-            <p class="month">‹ &nbsp;Noviembre 2026&nbsp; ›</p>
-            <div class="total-card">
-              <span class="label">Gastado en noviembre</span>
-              <span class="amount">$412.380</span>
-              <span class="delta">↓ 8% vs octubre</span>
-            </div>
-            <p class="screen-section">Por categoría</p>
-            <ul class="cats">
-              <li style="--c: var(--cat-super); --w: 100%"><span>Supermercado</span><b>$148.200</b><i></i></li>
-              <li style="--c: var(--cat-food); --w: 68%"><span>Comida</span><b>$101.050</b><i></i></li>
-              <li style="--c: var(--cat-transport); --w: 41%"><span>Transporte</span><b>$60.900</b><i></i></li>
-              <li style="--c: var(--cat-subs); --w: 22%"><span>Suscripciones</span><b>$32.480</b><i></i></li>
+        <figure class="phone carousel" aria-roledescription="carrusel" aria-label="Capturas de FIO con datos de ejemplo">
+          <div class="device">
+            <button type="button" class="nav prev" aria-label="Captura anterior">‹</button>
+            <ul class="slides" tabindex="0">
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="1 de 8: Movimientos" data-title="Movimientos" data-text="Todos tus gastos del mes, por día, con su categoría y el botón para compartir.">
+                <picture>
+                  <source srcset="img/dark/movimientos.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/movimientos.webp" alt="Pantalla Movimientos de FIO con datos de ejemplo" width="600" height="1184">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="2 de 8: Pendientes" data-title="Pendientes" data-text="Lo que falta clasificar, agrupado por comercio: un toque y queda la regla.">
+                <picture>
+                  <source srcset="img/dark/pendientes.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/pendientes.webp" alt="Pantalla Pendientes de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="3 de 8: Estadísticas" data-title="Estadísticas" data-text="Total del mes, comparación con el anterior y los últimos 6 meses.">
+                <picture>
+                  <source srcset="img/dark/estadisticas.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/estadisticas.webp" alt="Pantalla Estadísticas de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="4 de 8: Tendencia por categoría" data-title="Tendencia por categoría" data-text="Cómo cambia cada categoría mes a mes.">
+                <picture>
+                  <source srcset="img/dark/tendencia.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/tendencia.webp" alt="Pantalla Tendencia por categoría de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="5 de 8: Pagos" data-title="Pagos" data-text="Calendario con el gasto de cada día y los vencimientos de tus cuentas.">
+                <picture>
+                  <source srcset="img/dark/pagos.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/pagos.webp" alt="Pantalla Pagos de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="6 de 8: Cuentas del mes" data-title="Cuentas del mes" data-text="Se marcan pagadas solas cuando llega el cobro.">
+                <picture>
+                  <source srcset="img/dark/cuentas.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/cuentas.webp" alt="Pantalla Cuentas del mes de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="7 de 8: Compartidos" data-title="Compartidos" data-text="Quién te debe y a quién le debes.">
+                <picture>
+                  <source srcset="img/dark/compartidos.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/compartidos.webp" alt="Pantalla Compartidos de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
+              <li class="slide" role="group" aria-roledescription="captura" aria-label="8 de 8: Reglas" data-title="Reglas" data-text="Las que creas tú y las que la app aprende al clasificar.">
+                <picture>
+                  <source srcset="img/dark/reglas.webp" media="(prefers-color-scheme: dark)">
+                  <img src="img/light/reglas.webp" alt="Pantalla Reglas de FIO con datos de ejemplo" width="600" height="1184" loading="lazy">
+                </picture>
+              </li>
             </ul>
-            <p class="screen-section">Top comercios</p>
-            <ol class="top">
-              <li><span>Supermercado Centro</span><b>4 compras</b></li>
-              <li><span>Café de la esquina</span><b>3 compras</b></li>
-            </ol>
-            <div class="navbar" aria-hidden="true">
-              <span>Movimientos</span><span class="on">Estadísticas</span><span>Pagos</span><span>Ajustes</span>
-            </div>
+            <button type="button" class="nav next" aria-label="Captura siguiente">›</button>
           </div>
-          <figcaption>Datos de ejemplo</figcaption>
+          <figcaption aria-live="polite">
+            <strong class="cap-title">Movimientos</strong>
+            <span class="cap-text">Todos tus gastos del mes, por día, con su categoría y el botón para compartir.</span>
+          </figcaption>
+          <div class="dots"><button type="button" class="dot" aria-label="Ver Movimientos" aria-current="true"></button><button type="button" class="dot" aria-label="Ver Pendientes"></button><button type="button" class="dot" aria-label="Ver Estadísticas"></button><button type="button" class="dot" aria-label="Ver Tendencia por categoría"></button><button type="button" class="dot" aria-label="Ver Pagos"></button><button type="button" class="dot" aria-label="Ver Cuentas del mes"></button><button type="button" class="dot" aria-label="Ver Compartidos"></button><button type="button" class="dot" aria-label="Ver Reglas"></button></div>
+          <p class="sample">Capturas reales de la app con datos de ejemplo</p>
         </figure>
       </div>
     </section>
@@ -201,5 +236,54 @@
       <p>FIO · versión 1.1.0 · Hecho con Kotlin y Material 3</p>
     </div>
   </footer>
+  <script>
+    // Carrusel de capturas: flechas, puntos, teclado y deslizar (scroll-snap nativo)
+    (function () {
+      var root = document.querySelector(".carousel");
+      if (!root) return;
+      var track = root.querySelector(".slides");
+      var slides = Array.prototype.slice.call(track.children);
+      var dots = Array.prototype.slice.call(root.querySelectorAll(".dot"));
+      var title = root.querySelector(".cap-title"), text = root.querySelector(".cap-text");
+      var prev = root.querySelector(".prev"), next = root.querySelector(".next");
+      var current = 0;
+      var jumping = false, jt;
+      function show(i) {
+        update(i);
+        // Mientras dura el desplazamiento animado, el evento scroll no cambia la captura actual
+        jumping = true; clearTimeout(jt); jt = setTimeout(function () { jumping = false; }, 700);
+        track.scrollTo({ left: i * track.clientWidth, behavior: "smooth" });
+      }
+      function update(i) {
+        current = i;
+        title.textContent = slides[i].dataset.title;
+        text.textContent = slides[i].dataset.text;
+        dots.forEach(function (d, k) { if (k === i) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+        prev.disabled = i === 0;
+        next.disabled = i === slides.length - 1;
+      }
+      prev.addEventListener("click", function () { show(Math.max(0, current - 1)); });
+      next.addEventListener("click", function () { show(Math.min(slides.length - 1, current + 1)); });
+      dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); }); });
+      track.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") { e.preventDefault(); next.click(); }
+        if (e.key === "ArrowLeft") { e.preventDefault(); prev.click(); }
+      });
+      // Al deslizar con el dedo: la captura que queda visible pasa a ser la actual
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting && !jumping) update(slides.indexOf(e.target));
+          });
+        }, { root: track, threshold: 0.6 });
+        slides.forEach(function (sl) { io.observe(sl); });
+      }
+      // Respaldo: al terminar de deslizar (navegadores con "scrollend")
+      track.addEventListener("scrollend", function () {
+        if (!jumping) update(Math.round(track.scrollLeft / track.clientWidth));
+      });
+      update(0);
+    })();
+  </script>
 </body>
 </html>

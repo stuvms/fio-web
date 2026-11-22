@@ -246,3 +246,4 @@ h3 { font-size: 1.125rem; margin: 0 0 8px; }
 .verify summary { cursor: pointer; font-weight: 600; }
 .verify p { font-size: 0.85rem; margin: 8px 0 0; }
 .verify code { word-break: break-all; font-size: 0.8rem; }
+.note { font-size: 0.9rem; margin: 0 0 12px; }

@@ -80,7 +80,7 @@
       // intent:// abre FIO en Android (Chrome, Samsung Internet); fio:// para otros navegadores
       var isAndroid = /Android/i.test(navigator.userAgent);
       var href = isAndroid
-        ? "intent://c?d=" + data + "#Intent;scheme=fio;package=com.fio.cosostracker;end"
+        ? "intent://c?d=" + data + "#Intent;scheme=fio;package=com.fio.costostracker;end"
         : "fio://c?d=" + data;
       var open = document.getElementById("open");
       open.href = href;

@@ -24,6 +24,7 @@
       <nav aria-label="Secciones">
         <a href="#funciones">Funciones</a>
         <a href="#privacidad">Privacidad</a>
+        <a href="#instalar">Instalar</a>
         <a href="#descarga">Descarga</a>
       </nav>
     </div>
@@ -211,25 +212,71 @@
       </div>
     </section>
 
+    <section id="instalar" class="section install-section">
+      <div class="wrap">
+        <h2>Cómo instalar</h2>
+        <p class="lead">FIO no viene de la Play Store, así que Android pide unos pasos extra. Son una sola vez y toman un par de minutos.</p>
+        <ol class="install-steps">
+            <li>
+              <h3>Descarga el APK</h3>
+              <p>Toca <strong>Descargar APK</strong> en este mismo teléfono. Si Android lo pide, permite que tu navegador o “Mis archivos” instale apps.</p>
+            </li>
+            <li>
+              <h3>Si Play Protect la bloquea</h3>
+              <p>Google bloquea las apps que no vienen de la Play Store y leen notificaciones, porque es lo que hacen las apps de fraude. Para instalar FIO:</p>
+              <ul>
+                <li>Abre la <strong>Play Store</strong> → tu foto → <strong>Play Protect</strong> → ⚙️.</li>
+                <li>Apaga <strong>“Analizar apps con Play Protect”</strong>, instala FIO y <strong>vuelve a encenderlo</strong>.</li>
+                <li>En Samsung, si aparece el <strong>Bloqueador automático</strong>: Ajustes → Seguridad y privacidad → Bloqueador automático. Desactívalo para instalar y luego actívalo otra vez.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Abre FIO y sigue la configuración</h3>
+              <p>Al abrirla por primera vez, FIO muestra <strong>Configuración de captura</strong>: revisa sola cada paso y te lleva a la pantalla exacta para activarlo. La puedes volver a ver en Ajustes cuando quieras.</p>
+            </li>
+            <li>
+              <h3>Activa el acceso a notificaciones</h3>
+              <p>Es lo único imprescindible: sin él FIO no registra ningún gasto.</p>
+              <ul>
+                <li>Toca <strong>Activar</strong> y enciende <strong>“FIO · captura de gastos”</strong>.</li>
+                <li>Si Android dice <strong>“Ajuste restringido”</strong>: Ajustes → Aplicaciones → FIO → ⋮ → <strong>Permitir ajustes restringidos</strong>, y vuelve a intentarlo.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Deja la batería sin restricciones</h3>
+              <p>Si no, Android puede dormir a FIO y perder gastos. En Samsung revisa además que FIO no esté en <strong>“Aplicaciones en suspensión”</strong> (Ajustes → Batería → Límites de uso en segundo plano).</p>
+            </li>
+            <li>
+              <h3>Haz que Gmail te avise de las compras</h3>
+              <p>FIO lee los correos de compra desde las notificaciones de la <strong>app de Gmail</strong>, y Gmail solo avisa los que llegan a <strong>Principal</strong>.</p>
+              <ul>
+                <li>En un computador, abre un correo de compra en mail.google.com → ⋮ → <strong>Filtrar mensajes como este</strong> → Crear filtro.</li>
+                <li>Marca <strong>Categorizar como: Principal</strong> y <strong>No enviar nunca a Spam</strong>. Repite con las tiendas que te envían comprobantes.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Prueba con una compra chica</h3>
+              <p>Debería aparecer en <strong>Movimientos</strong> en segundos. En Configuración de captura verás también la <strong>última captura automática</strong>.</p>
+            </li>
+        </ol>
+      </div>
+    </section>
+
     <section id="descarga" class="section download">
       <div class="wrap download-card">
         <img src="favicon.svg" alt="" width="72" height="72">
         <div>
-          <h2>Descarga FIO 1.2</h2>
+          <h2>Descarga FIO 1.3</h2>
           <p>Gratis, para Android 8.0 o superior · 16 MB</p>
           <div class="actions download-actions">
-            <a class="btn btn-filled" href="https://github.com/stuvms/fio-web/releases/download/v1.2.0/fio-1.2.0.apk" download>Descargar APK</a>
-            <a class="btn btn-tonal" href="https://github.com/stuvms/fio-web/releases/tag/v1.2.0">Notas de la versión</a>
+            <a class="btn btn-filled" href="https://github.com/stuvms/fio-web/releases/download/v1.3.0/fio-1.3.0.apk" download>Descargar APK</a>
+            <a class="btn btn-tonal" href="https://github.com/stuvms/fio-web/releases/tag/v1.3.0">Notas de la versión</a>
           </div>
-          <ol class="install">
-            <li>Abre el archivo descargado en tu teléfono.</li>
-            <li>Si Android lo pide, permite instalar apps desde tu navegador o gestor de archivos.</li>
-            <li>Abre FIO y dale acceso a las notificaciones para que empiece a registrar tus gastos.</li>
-          </ol>
-          <p class="note"><strong>¿Tienes la 1.0?</strong> La 1.2 se instala como app nueva. En la 1.0 haz un respaldo (Ajustes → Datos → Respaldar datos), restáuralo en la 1.2 y luego desinstala la 1.0. Si tienes la 1.1, se actualiza encima sin perder nada.</p>
+          <p class="install-link">Antes de instalar, revisa <a href="#instalar">los pasos para que FIO funcione</a>: Android pide algunos permisos extra a las apps que no vienen de la Play Store.</p>
+          <p class="note"><strong>¿Tienes la 1.0?</strong> La 1.3 se instala como app nueva. En la 1.0 haz un respaldo (Ajustes → Datos → Respaldar datos), restáuralo en la 1.3 y luego desinstala la 1.0. Si tienes la 1.1 o la 1.2, se actualiza encima sin perder nada.</p>
           <details class="verify">
             <summary>Verificar el archivo</summary>
-            <p>SHA-256 del APK:<br><code>02a49b8bbf44dd0f2bfaf7f30a1b436d24db7a2344881965d86af3c15c6378b4</code></p>
+            <p>SHA-256 del APK:<br><code>0a1689f529beba8fd7cf5adaa2923a9dc477d91ae8c35d55e4f06786609ad227</code></p>
             <p>Certificado de firma (SHA-256):<br><code>73:63:38:FA:D4:E8:BC:8F:88:49:0A:5C:F1:DF:B4:34:31:7E:0E:1A:B8:29:46:43:6E:CC:0C:54:9B:94:61:7E</code></p>
           </details>
         </div>
@@ -239,7 +286,7 @@
 
   <footer class="footer">
     <div class="wrap">
-      <p>FIO · versión 1.2.0 · Hecho con Kotlin y Material 3</p>
+      <p>FIO · versión 1.3.0 · Hecho con Kotlin y Material 3</p>
     </div>
   </footer>
   <script>
